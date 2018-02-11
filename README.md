@@ -1,7 +1,7 @@
 ![Ubuntu](https://assets.ubuntu.com/v1/7426ea30-ubuntu-logo-set.png "Ubuntu")
 
 # Virtual Private Server (VPS) Deployment
-A script for automated deployment of a VPS.
+A script for automated deployment of a VPS. My VPS of choice is Ubuntu 16.04 Xenial LTS (Server).
 
 ## Usage 
 ```
