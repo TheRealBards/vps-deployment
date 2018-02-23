@@ -15,7 +15,7 @@ chmod 0750 $HOME
 
 /bin/echo -e "\e[1;31mUpdating and installing packages...\e[0m"
 apt-get update && apt-get -y upgrade
-apt-get -y install lsb-release scrot vim openssh-server build-essential checkinstall libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libpython-stdlib libpython2.7-minimal libpython2.7-stdlib python python-minimal python2.7 python2.7-minimal python3 python3-pip curl openssh-server ufw git
+apt-get -y install lsb-release scrot vim openssh-server ufw build-essential checkinstall libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libpython-stdlib libpython2.7-minimal libpython2.7-stdlib python python-minimal python2.7 python2.7-minimal python3 python3-pip python-dev curl openssh-server ufw git
 
 mkdir $HOME/Downloads
 cd $HOME/Downloads
