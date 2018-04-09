@@ -31,10 +31,11 @@ python $HOME/Downloads/get-pip.py
 cd $HOME
 echo "archey" >> $HOME/.bashrc
 echo "alias vi='vim'" >> $HOME/.bashrc
+echo "alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -" >> $HOME/.bashrc
 echo ":color desert" >> $HOME/.vimrc
 rm -r $HOME/Downloads/
 
-echo "PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ $RS '" >> .bashrc # green
+echo "PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ $RS '" >> $HOME/.bashrc # green
 
 /bin/echo -e "\e[1;31mSetting Skel...\e[0m"
 echo "archey" >> /etc/skel/.bashrc
