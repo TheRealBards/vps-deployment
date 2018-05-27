@@ -77,7 +77,10 @@ echo "TCPKeepAlive yes" >> /etc/ssh/sshd_config
 echo "AcceptEnv LANG LC_*" >> /etc/ssh/sshd_config
 echo "Subsystem sftp /usr/lib/openssh/sftp-server" >> /etc/ssh/sshd_config
 echo "UsePAM yes" >> /etc/ssh/sshd_config
+
+/bin/echo -e "\e[1;31mSetting Permissions...\e[0m"
 chown $USER:$USER -R $HOME/.ssh
+chmod 0750 $HOME
 
 /bin/echo -e "\e[1;31mRestarting SSH Service\e[0m"
 service ssh restart
