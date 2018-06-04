@@ -5,7 +5,7 @@ A script for automated deployment of a VPS. My VPS of choice is Ubuntu 16.04 Xen
 ```
 git clone https://github.com/TheRealBards/vps-deployment.git
 chmod +x vps-deployment/vps-deployment.sh
-sudo vps-deployment/vps-deployment.sh "<SSH Public Key>"
+sudo vps-deployment/vps-deployment.sh $USER
 ```
 
 ## Recommendations
